@@ -5,7 +5,7 @@ from os import uname
 def do_read():
 
 	if uname()[0] == 'WiPy':
-		rdr = mfrc522.MFRC522("GP14", "GP16", "GP15", "GP22", "GP17")
+		rdr = mfrc522.MFRC522("GP16", "GP19", "GP18", "GP19")
 	elif uname()[0] == 'esp8266':
 		rdr = mfrc522.MFRC522(0, 2, 4, 5, 14)
 	else:
